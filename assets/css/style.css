@@ -1,0 +1,148 @@
+/* -----------------------------
+    Primary style
+--------------------------------*/
+/*
+    Global CSS Code
+--------------------------------*/
+ /*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300, 300i,400,400i,600,600i,700,700i,800,800i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+a:hover { text-decoration: none }
+
+/* -----------------------------
+    Theme CSS Codes
+--------------------------------*/
+
+.gradient-ovrlay-wrapper{background-image: url(../img/bright-paint-strokes.jpg)}
+.gradient-ovrlay-wrapper:after{
+background: #232db2;
+background: -moz-linear-gradient(-45deg, #232db2 0%, #c452ce 80%);
+background: -webkit-linear-gradient(-45deg, #232db2 0%,#c452ce 80%);
+background: linear-gradient(135deg, #232db2 0%,#c452ce 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232db2', endColorstr='#c452ce',GradientType=1 );  
+    
+}
+.gradient-ovrlay-wrapper{
+    position: relative;
+    z-index: 1;
+}
+.gradient-ovrlay-wrapper:after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: .9;
+}
+.logo img{
+    max-height: 100px;
+    max-width: 165px
+}
+.mainmenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.mainmenu li{
+    display: inline-block;
+}
+.mainmenu li a{
+    display: block;
+    color: #fff;
+    opacity: .5;
+    font-size: 16px;
+    padding: 25px
+}
+.mainmenu li:hover a{
+    opacity: 1;
+}
+.header-area{
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+}
+.header-area:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background: #fff;
+    opacity: .2;
+    
+}
+.mobile-screen{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hero-text{
+    max-width: 450px;
+    color:#fff;
+    font-size: 17px;
+    line-height: 1.8;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.hero-text p{
+    opacity: .6;
+}
+.hero-text h1{
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+.hero-btns{
+    margin-top: 50px;
+
+}
+.bordered-btn{
+    border: 1px solid #ddd;
+}
+.underline-btn{
+    text-decoration: underline;
+}
+.hero-btns a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 35px;
+    border-radius: 50px;
+    display: inline-block;
+}
